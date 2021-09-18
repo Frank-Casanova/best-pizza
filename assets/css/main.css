@@ -1,0 +1,132 @@
+/*PALETA DE COLORES
+    Verde oscuro: #264653
+    Verde Claro: #2A9D8F
+    Amarillo: #E9C46A
+    Naranja: #F4A261
+    Rojizo: #E76F51
+    Links: #FF0080
+*/
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #FF0080;
+}
+
+a:hover{
+    opacity: 0.8;
+    color: #000;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){background-color: #f3e5f5;}
+
+.fa-star{
+    color: #FF8C00;
+}
+
+.title-item{
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #c6426e; */
+    /* Se puede usar shorthand's para hacer lo anterior en menos lineas */
+    border-bottom: solid 2px #FF8C00;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.address{
+    font-weight: bold;
+    color: #FF0080;
+    font-size: 1.2em;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+/*h1{
+    font-family: 'Carattere', cursive;
+    font-family: 'Fleur De Leah', cursive;
+}*/
+.container{
+    background: #40E0D0;
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color; */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    position: relative;
+    padding: 1.8em;
+
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border-radius: 50%;
+    background-color: #40E0D0;
+    display: inline-block;
+    font-weight: 700;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pie-pagina{
+    text-align: right;
+}
+
+.position{
+    background-color: #FF0080;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
