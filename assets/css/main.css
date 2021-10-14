@@ -15,6 +15,10 @@ a{
     color: #FF0080;
 }
 
+img{
+    max-width: 100%;
+}
+
 a:hover{
     opacity: 0.8;
     color: #000;
@@ -61,6 +65,8 @@ a:hover{
     font-weight: bold;
     color: #FF0080;
     font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
 }
 
 .main-image{
@@ -93,7 +99,7 @@ a:hover{
     border-radius: 10px;
     position: relative;
     padding: 1.8em;
-
+    overflow: scroll;
 }
 
 .actions{
@@ -126,7 +132,31 @@ a:hover{
 .position{
     background-color: #FF0080;
     color: white;
-    padding: 10px;
+    padding: 0.7em;
     border-radius: 4px;
     margin-right: 0.5em;
+}
+
+@media (max-width:600px){
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weigth: bold;
+        color: #FF0080
+    }
+    th{
+        display: none;
+    }
+}
+
+@media (min-heigth: 550px){
+    .content{
+        heigth: 500px;
+    }
 }
